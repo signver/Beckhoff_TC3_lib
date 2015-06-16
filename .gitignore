@@ -1,0 +1,18 @@
+*.app
+TwinCAT 3/TwinCAT 3/_Boot/TwinCAT RT (x64)/Plc/Port_852.app
+*.compileinfo
+TwinCAT 3/TwinCAT 3/_Boot/TwinCAT RT (x64)/Plc/Port_852.app
+*.cid
+TwinCAT 3/TwinCAT 3/_Boot/TwinCAT RT (x64)/Plc/Port_852.app
+*.crc
+TwinCAT 3/TwinCAT 3/_Boot/TwinCAT RT (x64)/Plc/Port_852_boot.tizip
+*.autostart
+TwinCAT 3/TwinCAT 3/_Boot/TwinCAT RT (x64)/Plc/Port_854_boot.tizip
+*.occ
+TwinCAT 3/TwinCAT 3/_Boot/TwinCAT RT (x64)/Plc/Port_852_boot.tizip
+*.crc
+TwinCAT 3/TwinCAT 3/_Boot/TwinCAT RT (x64)/Plc/Port_852.cid
+*.cid
+TwinCAT 3/TwinCAT 3/_Boot/TwinCAT RT (x64)/Plc/Port_852.app
+TwinCAT 3/TwinCAT 3/_Boot/TwinCAT RT (x64)/Plc/Port_852.app
+TwinCAT 3/TwinCAT 3/_Boot/TwinCAT RT (x64)/Plc/Port_852.cid
