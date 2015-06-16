@@ -17,7 +17,7 @@
     <Title>IO_DigiIn_Lib</Title>
     <ProjectVersion>1.0</ProjectVersion>
     <Author>Chua Siang Poh</Author>
-    <Description>This library aims to simply reduce the time needed to declare mappable BOOL inputs from the PLC to the IO</Description>
+    <Description>This library aims to simply reduce the time needed to declare mappable BOOL from the PLC to the IO</Description>
   </PropertyGroup>
   <ItemGroup>
     <PlaceholderReference Include="Tc2_Standard">
@@ -52,11 +52,16 @@
     <Folder Include="GVL" />
     <Folder Include="Version" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="IO_DigiIn.tmc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
   <ProjectExtensions>
     <PlcProjectOptions>
       <XmlArchive>
-  <Data>
-    <o xml:space="preserve" t="OptionKey">
+        <Data>
+          <o xml:space="preserve" t="OptionKey">
       <v n="Name">"&lt;ProjectRoot&gt;"</v>
       <d n="SubKeys" t="Hashtable" ckt="String" cvt="OptionKey">
         <v>{F66C7017-BDD8-4114-926C-81D6D687E35F}</v>
@@ -93,14 +98,14 @@
       </d>
       <d n="Values" t="Hashtable" />
     </o>
-  </Data>
-  <TypeList>
-    <Type n="Boolean">System.Boolean</Type>
-    <Type n="Hashtable">System.Collections.Hashtable</Type>
-    <Type n="OptionKey">{54dd0eac-a6d8-46f2-8c27-2f43c7e49861}</Type>
-    <Type n="String">System.String</Type>
-  </TypeList>
-</XmlArchive>
+        </Data>
+        <TypeList>
+          <Type n="Boolean">System.Boolean</Type>
+          <Type n="Hashtable">System.Collections.Hashtable</Type>
+          <Type n="OptionKey">{54dd0eac-a6d8-46f2-8c27-2f43c7e49861}</Type>
+          <Type n="String">System.String</Type>
+        </TypeList>
+      </XmlArchive>
     </PlcProjectOptions>
   </ProjectExtensions>
 </Project>

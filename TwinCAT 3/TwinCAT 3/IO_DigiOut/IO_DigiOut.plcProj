@@ -3,21 +3,21 @@
   <PropertyGroup>
     <FileVersion>1.0.0.0</FileVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{aeecff2c-bffc-418f-8c80-e5b5cd781dd7}</ProjectGuid>
+    <ProjectGuid>{5022eabd-c632-46e1-bf7c-476600d6e44e}</ProjectGuid>
     <Name>IO_DigiOut</Name>
     <ProgramVersion>3.1.0.8</ProgramVersion>
-    <Application>{22c96ff7-d127-4e75-912f-1328c0d4242d}</Application>
-    <TypeSystem>{d4c2c4e8-bfce-4f55-bd4f-900249bcfd20}</TypeSystem>
-    <Implicit_Task_Info>{1edfe15e-5185-4db7-8059-00ad2bb538e5}</Implicit_Task_Info>
-    <Implicit_KindOfTask>{38499f2c-ade8-4427-8057-0bf1a30dcadf}</Implicit_KindOfTask>
-    <Implicit_Jitter_Distribution>{84d26dd3-3a72-4b9a-bc89-078bc6f152ac}</Implicit_Jitter_Distribution>
-    <LibraryReferences>{098e47dd-2fc7-48df-8dc2-f440a0955116}</LibraryReferences>
+    <Application>{10acee47-e93f-42cd-957a-b75bea333008}</Application>
+    <TypeSystem>{9912fe53-9d4a-4603-8f96-9f74e3758a2e}</TypeSystem>
+    <Implicit_Task_Info>{3a2565be-9512-4eda-8782-a05369be7339}</Implicit_Task_Info>
+    <Implicit_KindOfTask>{9cb991ca-12d8-4348-84c9-827f1aa81aa3}</Implicit_KindOfTask>
+    <Implicit_Jitter_Distribution>{15bf4463-a7c8-4eef-86b2-22d7db43f43a}</Implicit_Jitter_Distribution>
+    <LibraryReferences>{7b08a719-8141-4c5c-af42-f800071fe9d7}</LibraryReferences>
     <Company>Chua Siang Poh</Company>
     <Released>True</Released>
-    <Title>IO_DigiOut_Lib </Title>
+    <Title>IO_DigiOut_Lib</Title>
     <ProjectVersion>1.0</ProjectVersion>
     <Author>Chua Siang Poh</Author>
-    <Description>This library simply aims to reduce the time neede d to create mappable Digital Outputs from the PLC to the IO</Description>
+    <Description>This library aims to simply reduce the time needed to declare mappable BOOL from the PLC to the IO</Description>
   </PropertyGroup>
   <ItemGroup>
     <PlaceholderReference Include="Tc2_Standard">
@@ -38,25 +38,25 @@
     </PlaceholderReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IO_DigiOut_Parameters.TcGVL">
+    <Folder Include="GVL" />
+    <Folder Include="Version" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GVL\IO_DigiOut_GVL.TcGVL">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="GVL\IO_DigiOut_GVL.TcGVL">
+    <Compile Include="IO_DigiOut_Parameters.TcGVL">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Version\Global_Version.TcGVL">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="GVL" />
-    <Folder Include="Version" />
-  </ItemGroup>
   <ProjectExtensions>
     <PlcProjectOptions>
       <XmlArchive>
-        <Data>
-          <o xml:space="preserve" t="OptionKey">
+  <Data>
+    <o xml:space="preserve" t="OptionKey">
       <v n="Name">"&lt;ProjectRoot&gt;"</v>
       <d n="SubKeys" t="Hashtable" ckt="String" cvt="OptionKey">
         <v>{F66C7017-BDD8-4114-926C-81D6D687E35F}</v>
@@ -93,14 +93,14 @@
       </d>
       <d n="Values" t="Hashtable" />
     </o>
-        </Data>
-        <TypeList>
-          <Type n="Boolean">System.Boolean</Type>
-          <Type n="Hashtable">System.Collections.Hashtable</Type>
-          <Type n="OptionKey">{54dd0eac-a6d8-46f2-8c27-2f43c7e49861}</Type>
-          <Type n="String">System.String</Type>
-        </TypeList>
-      </XmlArchive>
+  </Data>
+  <TypeList>
+    <Type n="Boolean">System.Boolean</Type>
+    <Type n="Hashtable">System.Collections.Hashtable</Type>
+    <Type n="OptionKey">{54dd0eac-a6d8-46f2-8c27-2f43c7e49861}</Type>
+    <Type n="String">System.String</Type>
+  </TypeList>
+</XmlArchive>
     </PlcProjectOptions>
   </ProjectExtensions>
 </Project>
