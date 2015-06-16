@@ -91,7 +91,7 @@ END_VAR
 ]]></Declaration>
       <Implementation>
         <ST><![CDATA[fbJog[INDEX](
-	Axis:= AXIS[INDEX], 
+	Axis:= AXIS[INDEX].AXIS, 
 	JogForward:= FALSE, 
 	JogBackwards:= FALSE );
 IF fbJog[INDEX].Error THEN 
@@ -276,7 +276,7 @@ ELSE
 END_IF
 
 fbJog[INDEX](
-	Axis:= AXIS[INDEX], 
+	Axis:= AXIS[INDEX].AXIS, 
 	JogForward:= NOT REVERSE, 
 	JogBackwards:= REVERSE );
 IF fbJog[INDEX].Error THEN 
