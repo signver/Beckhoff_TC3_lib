@@ -130,15 +130,15 @@ END_IF]]></ST>
     <Action Name="ACT_MoveToPosition" Id="{40847845-e28a-467f-8c2b-007d9c73cf9b}" FolderPath="HMI Actions\">
       <Implementation>
         <ST><![CDATA[CASE Servo_MoveToPosition(i,HmiToPlc[i].TARGET_POSITION,HmiToPlc[i].TARGET_VELOCITY,HmiToPlc[i].TARGET_ACCELERATION,HmiToPlc[i].TARGET_DECELERATION,HmiToPlc[i].TARGET_JERK) OF
-TT_ServoMotion_FunctionResult.MOTION_UNKNOWN_AXIS:
+ServoMotion_FunctionResult.MOTION_UNKNOWN_AXIS:
 	;
-TT_ServoMotion_FunctionResult.MOTION_COMMAND_ABORTED: 
+ServoMotion_FunctionResult.MOTION_COMMAND_ABORTED: 
 	;
-TT_ServoMotion_FunctionResult.MOTION_ERROR:
+ServoMotion_FunctionResult.MOTION_ERROR:
 	;
-TT_ServoMotion_FunctionResult.MOTION_BUSY: 
+ServoMotion_FunctionResult.MOTION_BUSY: 
 	;
-TT_ServoMotion_FunctionResult.MOTION_OK:
+ServoMotion_FunctionResult.MOTION_OK:
 	;
 END_CASE]]></ST>
       </Implementation>
@@ -246,15 +246,15 @@ END_IF]]></ST>
     <Action Name="ACT_MoveByDistance" Id="{7d58b39d-b312-4669-b3d1-c2d6a9066f91}" FolderPath="HMI Actions\">
       <Implementation>
         <ST><![CDATA[CASE Servo_MoveByDistance(i,HmiToPlc[i].TARGET_POSITION,HmiToPlc[i].TARGET_VELOCITY,HmiToPlc[i].TARGET_ACCELERATION,HmiToPlc[i].TARGET_DECELERATION,HmiToPlc[i].TARGET_JERK) OF
-TT_ServoMotion_FunctionResult.MOTION_UNKNOWN_AXIS:
+ServoMotion_FunctionResult.MOTION_UNKNOWN_AXIS:
 	;
-TT_ServoMotion_FunctionResult.MOTION_COMMAND_ABORTED: 
+ServoMotion_FunctionResult.MOTION_COMMAND_ABORTED: 
 	;
-TT_ServoMotion_FunctionResult.MOTION_ERROR:
+ServoMotion_FunctionResult.MOTION_ERROR:
 	;
-TT_ServoMotion_FunctionResult.MOTION_BUSY: 
+ServoMotion_FunctionResult.MOTION_BUSY: 
 	;
-TT_ServoMotion_FunctionResult.MOTION_OK:
+ServoMotion_FunctionResult.MOTION_OK:
 	;
 END_CASE
 			]]></ST>

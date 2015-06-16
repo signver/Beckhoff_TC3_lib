@@ -27,12 +27,6 @@
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 				</Instance>
 			</Project>
-			<Project GUID="{239EFFC8-E5C4-4FCA-90C6-85A2560AAB39}" Name="IO_DigiIn" PrjFilePath="IO_DigiIn\IO_DigiIn.plcproj" TmcFilePath="IO_DigiIn\IO_DigiIn.tmc" ReloadTmc="true" AmsPort="854" FileArchiveSettings="#x000e">
-				<Instance Id="#x01010040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2">
-					<Name>IO_DigiIn Instance</Name>
-					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
-				</Instance>
-			</Project>
 		</Plc>
 	</Project>
 </TcSmProject>
