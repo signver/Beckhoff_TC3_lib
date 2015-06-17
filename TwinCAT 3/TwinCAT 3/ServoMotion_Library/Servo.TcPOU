@@ -28,6 +28,7 @@ END_VAR
 			ACT_On();
 		END_IF
 		IF NOT HmiToPlc[i].SERVO_JOG_MODE THEN 
+			Servo_Jog_Stop(i);
 			IF HmiToPlc[i].SERVO_MOVE_ABS THEN
 				ACT_MoveToPosition();
 			END_IF
@@ -299,7 +300,9 @@ END_VAR
     </Property>
     <Action Name="ACT_Reset" Id="{a7a36296-4bd3-4c04-bfcc-ad271ca28fe6}" FolderPath="HMI Actions\">
       <Implementation>
-        <ST><![CDATA[Servo_Reset(i);]]></ST>
+        <ST><![CDATA[IF Servo_Reset(i) = ServoMotion_FunctionResult.MOTION_OK THEN
+	HmiToPlc[i].SERVO_RESET := FALSE;
+END_IF]]></ST>
       </Implementation>
     </Action>
     <Method Name="Servo_MoveByDistance" Id="{b7b49934-4930-4ea2-b772-a6e74f151dd6}">
@@ -427,6 +430,8 @@ PlcToHmi[i].actVelo := AXIS[i].AXIS.NcToPlc.ActVelo;
 PlcToHmi[i].setPos	:= AXIS[i].AXIS.NcToPlc.SetPos;
 PlcToHmi[i].setVelo := AXIS[i].AXIS.NcToPlc.SetVelo;
 PlcToHmi[i].controller_override := fbPower[i].Override;
+PlcToHmi[i].hasError := AXIS[i].AXIS.Status.Error;
+PlcToHmi[i].ErrorID := AXIS[i].AXIS.Status.ErrorID;
 PlcToHmi[i].isBwDisabled := NOT fbPower[i].Enable_Negative;
 PlcToHmi[i].isFwDisabled := NOT fbPower[i].Enable_Positive;
 PlcToHmi[i].isCalibrated := AXIS[i].AXIS.Status.Homed;

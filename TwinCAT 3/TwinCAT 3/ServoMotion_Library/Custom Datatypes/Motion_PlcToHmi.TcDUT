@@ -8,6 +8,8 @@ STRUCT
 	setPos				: LREAL; 
 	setVelo 			: LREAL; 
 	controller_override : LREAL;
+	ErrorID				: UDINT;
+	hasError			: BOOL;
 	isDisabled 			: BOOL;
 	isFwDisabled 		: BOOL;
 	isBwDisabled 		: BOOL;
@@ -17,7 +19,7 @@ STRUCT
 	isPositiveDirection : BOOL;
 	isNegativeDirection : BOOL;            
     isInTarget 			: BOOL;            
-    isInRange 			: BOOL;            
+    isInRange 			: BOOL;              
 END_STRUCT
 END_TYPE
 ]]></Declaration>
